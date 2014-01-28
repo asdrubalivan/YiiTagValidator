@@ -21,7 +21,7 @@ class YiiTagValidator extends CValidator{
             elseif($this->min !== null && $lenTag < $this->min)
             {
                 $this->addError($object, $attribute, 
-                        "Tag $tag is too short. Minimum is $this->max");
+                        "Tag $tag is too short. Minimum is $this->min");
             }
         }
     }    
